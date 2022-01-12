@@ -1,0 +1,171 @@
+:root {
+    --bs-body-font-family: "Times New Roman";
+}
+
+section {
+    min-height: 100vh;
+}
+
+p {
+    font-family: "Tahoma";
+}
+
+.jumbotron {
+    height: 570px;
+    background-image: url(img/index/bg.jpg);
+    background-size: cover;
+    background-repeat: none;
+}
+
+.jumbotron h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 83px;
+}
+
+.jumbotron p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.main-navs {
+    transform: translateY(-50%);
+}
+
+.main-navs .img {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    width: 100%;
+}
+
+.main-navs .img:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.main-navs .title {
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+
+footer {
+    background-color: #234531;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    height: 76px;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    height: 100vh;
+    writing-mode: vertical-rl;
+}
+
+a.menu {
+    margin-top: 65px;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url(/img/menu_green.png);
+}
+
+a.menu-white {
+    margin-top: 65px;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url(/img/menu_white.png);
+}
+
+.sidebar .link {
+    font-family: Tahoma;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #8DB287;
+}
+
+.menu-line {
+    height: 40%;
+    background-color: #CBE3C7;
+    width: 8px;
+}
+
+
+/* About */
+
+.about-bg {
+    background-image: url(img/about/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-mask {
+    background-image: url(img/about/mask.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -200%;
+}
+
+.head-section p,
+.head-section b {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.head-section h1.title {
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #8DB287;
+}
+
+.head-section p.sub-titile {
+    font-family: "Tahoma";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.head-section .content {
+    width: 588px;
+}
+
+
+/* Helpers */
+
+.pt-70 {
+    padding-top: 70px;
+}
+
+.point {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #8DB387;
+}
