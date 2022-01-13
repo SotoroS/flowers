@@ -2,8 +2,13 @@
     --bs-body-font-family: "Times New Roman";
 }
 
+body {
+    overflow: hidden;
+}
+
 section {
     min-height: 100vh;
+    background-color: #fff;
 }
 
 p {
@@ -45,6 +50,7 @@ p {
 
 .main-navs .img:hover {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    transition: box-shadow .1s;
 }
 
 .main-navs .title {
@@ -107,6 +113,12 @@ a.menu-white {
     width: 8px;
 }
 
+.menu-line-big {
+    height: 65%;
+    background-color: #CBE3C7;
+    width: 8px;
+}
+
 
 /* About */
 
@@ -122,6 +134,16 @@ a.menu-white {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -200%;
+}
+.head {
+    display: flex;
+    width: max-content;
+}
+
+.head-section {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
 }
 
 .head-section p,
@@ -155,11 +177,99 @@ a.menu-white {
     width: 588px;
 }
 
+.class-bg {
+    background-image: url(img/class.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.safe-bg {
+    background-image: url(img/safe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Content */
+
+#content h1.title {
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 50px;
+}
+
+#content p.desc {
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+#content span.number {
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    display: inline-block;
+    transform: translateY(-100%);
+    color: #fff;
+}
+
+#content img.preview {
+    transform: translateY(-50%);
+    transition: box-shadow .1s;
+}
+
+#content img.preview:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    transition: box-shadow .1s;
+}
+
+#content .mark {
+    background-color: #CBE3C7;
+    width: 84px;
+    top: 45px;
+    left: -42px;
+    transition: box-shadow .1s, left .1s;
+}
+
+#content .mark:hover {
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+    left: -32px;
+    transition: box-shadow .1s, left .1s;
+}
+
+#content .text-end .mark {
+    background-color: #CBE3C7;
+    width: 84px;
+    top: 45px;
+    right: -42px;
+    left: inherit;
+    transition: box-shadow .1s, left .1s;
+}
+
+#content .text-end .mark:hover {
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+    right: -32px;
+    transition: box-shadow .1s, left .1s;
+}
 
 /* Helpers */
 
 .pt-70 {
     padding-top: 70px;
+}
+
+.pt-225 {
+    padding-top: 225px;
+}
+
+.pr-145 {
+    padding-right: 145px;
 }
 
 .point {
