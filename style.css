@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Tahoma';
+    src: url('/fonts/tahoma.ttf');
+}
+
 :root {
     --bs-body-font-family: "Times New Roman";
 }
@@ -124,17 +129,29 @@ a.menu-white {
 
 .about-bg {
     background-image: url(img/about/bg.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 
 .about-mask {
-    background-image: url(img/about/mask.png);
-    background-size: cover;
+    background-image: url(img/about_pattern.png);
     background-repeat: no-repeat;
-    background-position: -200%;
+    background-position: right;
 }
+
+.class-mask {
+    background-image: url(img/class_pattern.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.safe-mask {
+    background-image: url(img/safe_pattern.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 .head {
     display: flex;
     width: max-content;
@@ -190,6 +207,7 @@ a.menu-white {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
 /* Content */
 
@@ -257,6 +275,7 @@ a.menu-white {
     right: -32px;
     transition: box-shadow .1s, left .1s;
 }
+
 
 /* Helpers */
 
